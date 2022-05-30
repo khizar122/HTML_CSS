@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contact Page</title>
+	<style type="text/css">
+		body{
+		
+		margin: 0;
+	}
+
+
+
+	#Signup{
+		width: 380px;
+		height: 300px;
+		background-color: white;
+		padding: 24px;
+		margin-left: auto;
+		margin-right: auto;
+	
+	}
+
+	
+	.input-label{
+		width: 100%;
+			font-size: 18px; 
+			padding-bottom: 12px;
+			margin-bottom: 36px;
+			border-top: 0;
+			border-left: 0;
+			border-right: 0;
+			
+	}
+
+	#submit{
+		background-color:cornflowerblue;
+			padding-top: 7px;
+			padding-bottom: 7px;
+			padding-left: 10px;
+			padding-right: 10px;
+			font-size: 18px;
+		
+
+	}
+
+    .topbar{
+    background-color: cornflowerblue;
+    font-size: 20px;
+   padding-left: 10px;
+    color: whitesmoke;
+}
+
+	</style>
+</head>
+<body>
+	
+    <div style="background-color: cornflowerblue;padding: 10px;">
+        <center>
+            <a href="index.html">   <span class="topbar">Home</span></a>
+     <a href="contact.html">  <span class="topbar">Contact</span></a> 
+        <span class="topbar">About</span>
+    </center>
+    </div>
+		<form id="Signup">
+			<div  >
+				<input class="input-label" type="text" name="Full-name" placeholder="Full Name" required="">
+			</div>
+			<div>
+				<input class="input-label" type="email" name="email" placeholder="Email" required="">
+			</div>
+			<div>
+				<input class="input-label" type="text" name="contact-number" placeholder="Contact Number" minlength ="0" maxlength ="10">
+			</div>
+			<div style="text-align: center;">
+			<input id="submit" type="submit" name="Submit"></div>
+		</form>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Forms!
+        </title>
+        <style>
+            #register-form{
+                padding: 20px;
+                background-color: aliceblue;
+                width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .input-label{
+                margin: 0;
+                margin-top: 12px;
+                margin-bottom: 5px;
+            }
+            .input-item{
+                width: 100%;
+            }
+            .terms-check{
+                margin-top: 12px;
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body style="background-color: cornflowerblue;">
+        
+        <form id="register-form">
+            <h1>Signup</h1>
+        <div>
+          <p class="input-label">Username : </p> 
+<input type="text" placeholder="Username" name="username"class="input-item" />
+        </div>
+        <div>
+        <p class="input-label">Password :</p>    
+<input type="password" placeholder="Password" name="pass"class="input-item" />
+        </div>
+        <div>
+       <p class="input-label"> Email :</p>     
+<input type="email" placeholder="Email" name="email" class="input-item"/>
+        </div>
+        <div>
+        <p class="input-label"> Gender :</p>    
+<input type="radio"  name="Gender" >Female</input>
+<input type="radio"  name="Gender" >Male</input>
+<input type="radio"  name="Gender" >other</input>
+        </div>
+        
+        <div>
+           <p class="input-label">Security Questions :</p>
+<select class="input-item">
+    <option value="Heloo">Question 1</option>
+    <option value="Helo2">Question 2</option>
+    <option value="Helo3">Question 3</option>
+</select>
+        </div>
+        
+        <div>
+            <input list="technologies" name="technology"/>
+            <datalist id="technologies">
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>React</option>
+                <option>Javascript</option>
+            </datalist>
+        </div>
+        <div>
+          <p class="input-label">Description :</p>  
+<textarea name="Desc" rows="6" cols="20" class="input-item"></textarea>
+        </div>
+        <div>     
+     <input type="checkbox" class="terms-check"/> Accept Terms & Conditions.
+        </div>
+        <div>     
+            <input type="date" max="1999-01-01"/>
+               </div>
+        <div>     
+            <input type="submit" value="Register"/>
+               </div>
+    </form>
+    </body>
+</html>
