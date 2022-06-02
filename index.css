@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
 }
 
@@ -13,7 +13,7 @@ body {
 
 .nav {
   display: flex;
-  background: white;
+
 }
 
 .links {
@@ -119,7 +119,7 @@ li {
 .btn {
   padding: 6px 12px;
   border: none;
-  border: solid 2px rgb(220, 216, 216);
+  border: solid 2px #505357;
   border-radius: 5px;
   background: rgba(129, 127, 127, 0);
   color: #505357;
@@ -133,6 +133,7 @@ li {
 .btn:hover {
   background-color: #505357;
   color: whitesmoke;
+  
 
 }
 
@@ -181,13 +182,11 @@ li {
 .fonts {
 
   font-size: 8px;
-  height: 100%;
   text-transform: uppercase;
   font-style: bold;
   display: flex;
   overflow: hidden;
   padding-top: 10px;
-
   flex-direction: column;
 
 
@@ -195,11 +194,128 @@ li {
 
 .big-font {
   font-size: 20px;
-  padding: 10px;
-  ;
+  padding: 10px; 
 
 
 
 }
 
-.flex-img {}
+.card1{
+  display: flex;
+
+  width: 100%;
+ 
+  padding-left: 250px;
+  padding-right: 190px;
+
+}
+.left-header{
+  display: flex;
+  width: 100%;
+  
+}
+.left{
+  display: flex;
+  flex: 1.3;
+  width: 100%;
+  margin-top: 4px;
+  flex-direction: column;
+ border: 1px solid #e3e2e9;
+ font-size: small;
+
+}
+.right{
+  display: flex;
+  flex: 1;
+  border: 1px solid #e3e2e9;;
+  margin-top: 4px;
+  margin-left: 4px;
+  flex-direction: column;
+  
+
+}
+.inner-first{
+  display: flex;
+  flex: 1;
+  padding: 20px;
+  padding-left: 10px;
+  font-style: bold;
+  border-bottom: 1px solid #e3e2e9;
+}
+.inner-sec{
+  display: flex;
+  flex: 0.6;
+  padding: 20px;
+  padding-left: 10px;
+  font-style: bold;
+  border-bottom: 1px solid #e3e2e9;
+  justify-content: space-between;
+ 
+}
+.left-content{
+  display: flex;
+}
+.contents{
+  font-size: 12px;
+  text-transform: uppercase;
+  font-style: bold;
+  display: flex;
+  overflow: hidden;
+  padding-top: 10px;
+
+  flex-direction: row;    
+}
+.mrr
+{
+  display: flex;
+  flex: 0.8;
+  justify-content: flex-start;
+}
+#mrr2{
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+}
+.number{
+  display: flex;
+  direction: row;
+  flex: 1;
+  justify-content: space-between;
+}
+.date{
+  font-size: 8px;
+  padding: 10px;
+  font-style:oblique;
+  
+}
+.acc{
+  padding-top: 15px;
+  padding-left: 15px;
+  font-size: 10px;
+}
+.expension{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer{
+
+  background-color: #f1ecec;
+ 
+display: flex;
+flex-direction: row;
+
+}
+footer div{
+  padding: 10px;
+  flex: 2;
+  margin-top: auto;
+  
+}
+.chnage{
+  
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+}
+
