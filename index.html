@@ -1,123 +1,109 @@
-<!DOCTYPE html>
 <html>
+
 <head>
-    <title>
-        Travel
-    </title>
-    <style>
-body{
-    margin: 0;
-    
-}
-.topbar{
-    background-color: cornflowerblue;
-    font-size: 20px;
-    padding-left: 20px;
-    color: whitesmoke;
-   
-
-    
-}
-.fullimg{
-    width: 100%;
-    height: auto;
-}
-.img-grid{
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px grey;
-    margin-bottom: 20px;
-    
-    
-}
-.heading{
-padding-top: 5px;
-}
-h2{
-    color:cornflowerblue;
-    text-shadow: 2px 2px 2px gray;
-}
-
-footer{
-    height: 50px;
-    background-color: cornflowerblue;
-    text-align: center;
-    padding-top:20px ;
-    color: whitesmoke;
-    border-radius: 10px;
-}
-a{
-    text-decoration: none;
-}
-    </style>
+  <title>
+    Dashboard
+  </title>
+  <script src="https://kit.fontawesome.com/fbf8e4451a.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
 </head>
-<body style=" background-color: lightgray;">
-    <div style="background-color: cornflowerblue;padding-top: 10px;height: 50px;">
-        <center>
-            <a href="index.html">   <span class="topbar">Home</span></a>
-     <a href="contact.html">  <span class="topbar">Contact</span></a> 
-     <a href="ass2.html"><span class="topbar">Table</span></a>   
-    </center>
-    </div>
-    <div>
-        <img class="fullimg" src="https://vastphotos.com/files/uploads/photos/10177/new-york-skyline-high-resolution-l.jpg" alt="img">
-    </div>
-    <div>
-        <center><span><h2>My Travel Diaries</h2></span></center>
-    </div>
-    <div>
 
-        <table style="margin: auto;text-align:center">
+<body>
+  <div class="nav mobilenav">
 
-            <tr>
-                <td>
-                   <div class="img-grid">
-                       <h2 class="heading"><a href="Google.html">Sydney </a>  </h2>
-           <img src="https://blog.thomascook.in/wp-content/uploads/2017/11/3.-australia--e1521255079904.jpg" width="300" height = "300">
-                   </div>
-        
-                </td> 
-                <td>
-                    <div class="img-grid">
-                        <h2 class="heading">Amsterdam</h2>
-            <img src="https://blog.thomascook.in/wp-content/uploads/2017/11/11.-amsterdam-e1521256259465.jpg" width="300" height = "300">
-                    </div>
-                </td> 
-                <td>
-                    <div class="img-grid">
-                        <h2 class="heading">Florence</h2>
-            <img src="https://blog.thomascook.in/wp-content/uploads/2017/11/16.-Florence-e1521256594550.jpg" width="300" height = "300">
-                    </div>
-                </td>   
-               </tr>
-            
-               <tr>
-                <td>
-                   <div class="img-grid">
-                       <h2 class="heading">copenhagen</h2>
-           <img src="https://blog.thomascook.in/wp-content/uploads/2017/11/21.-copenhagen-e1521257448933.jpg" width="300" height = "300">
-                   </div>
-        
-                </td> 
-                <td>
-                    <div class="img-grid">
-                        <h2 class="heading">New York</h2>
-            <img src="https://blog.thomascook.in/wp-content/uploads/2017/11/7.-new-york-e1521255270361.jpg" width="300" height = "300">
-                    </div>
-                </td> 
-                <td>
-                    <div class="img-grid">
-                        <h2 class="heading">Kyoto</h2>
-            <img src="https://blog.thomascook.in/wp-content/uploads/2017/11/22.-japanese-e1521257495111.jpg" width="300" height = "300">
-                    </div>
-                </td>   
-               </tr>
-    
-        </table>
+    <div class="links">
+      <a href=""><b>Logo</b></a>
+
     </div>
-    <footer>
-<p>&copy;Copyright 5-30-2022</p>
-    </footer>
+
+    <div class="header-title">
+      <ul class="fa-ul">
+        <li><b>Dashboard</b> <img src="asset/arrow.png"> </li>
+        <li><b>Apps</b> <img src="asset/arrow.png"> </li>
+        <li> <b>Pages</b><img src="asset/arrow.png"> </li>
+        <li> <b>Components</b> </li>
+        <li> <b>Collections</b> </li>
+      </ul>
+    </div>
+
+    <div class="logout">
+      <ul class="fa-ul">
+        <li><a class="button-dark" href=""><img src="asset/search.png"></a></li>
+        <li><a class="button-dark" href=""> <img src="asset/message.png"></a><span class="badge">3</span></li>
+        <li> <a class="button-dark" href=""><img src="asset/bell.png"></a><span class="badge">3</span></li>
+        <li> <a class="button-dark" href=""><img src="asset/profile.png"></a></li>
+
+      </ul>
+    </div>
+
+  </div>
+  <div class="flex-welcome">
+    <div class="txtdash">
+      <p> <span id="sales">Dashboard / <a href="" style="color: #0752f3;">Sales Monitoring</a></span><br><br>
+        <span><b>Welcome To Dashboard</b></span>
+      </p>
+    </div>
+    <div class="btns-container">
+      <button class="btn"><i class="fa fa-envelope-o" aria-hidden="true"></i> Email</button>
+      <button class="btn"><i class="fa fa-print" aria-hidden="true"></i> Print </button>
+      <button class="btn-fill"><i class="fa fa-folder-open-o" aria-hidden="true"></i> Generate Report </button>
+    </div>
+
+
+  </div>
+  <div class="parent">
+
+    <div class="child">
+      <div class="fonts">
+        <span><b style="padding-left: 10px;">Conversion Rate</b></span>
+        <span><b class="big-font">0.81%</b><span style="color: green; text-transform: lowercase">0.12%
+            <i class="fa fa-arrow-up" aria-hidden="true"> </i> than last week</span></span>
+        <a href="" style="padding: 0;justify-content: flex-end;"><img src="asset/Graph-1.png" class="graphimg"></a>
+      </div>
+
+    </div>
+
+
+    <div class="child">
+
+      <div class="fonts">
+        <span><b style="padding-left: 10px;">Unique Purchases</b></span>
+        <span><b class="big-font">3,137</b><span style="color: red; text-transform: lowercase;">0.7%
+            <iclass="fa fa-arrow-down" aria-hidden="true"></i> than last week
+          </span></span>
+        <img src="asset/Graph-1.png" class="graphimg">
+      </div>
+
+    </div>
+
+
+    <div class="child">
+
+      <div class="fonts">
+        <span><b style="padding-left: 10px;">Avg. order values</b></span>
+        <span><b class="big-font">$306.20</b><span style="color: red; text-transform: lowercase;">0.3%
+            <i class="fa fa-arrow-down" aria-hidden="true"></i> than last week</span></span>
+        <img src="asset/Graph-1.png" class="graphimg">
+      </div>
+
+    </div>
+
+
+    <div class="child">
+
+      <div class="fonts">
+        <span><b style="padding-left: 10px;">Order Quantity</b></span>
+        <span><b class="big-font">1,650</b><span style="color: green; text-transform: lowercase">2.1%
+            <i class="fa fa-arrow-up" aria-hidden="true"> </i> than last week</span></span>
+        <img src="asset/Graph-1.png" class="graphimg">
+      </div>
+
+    </div>
+
+  </div>
 </body>
+
 </html>
