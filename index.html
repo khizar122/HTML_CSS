@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <div class="nav mobilenav">
+  <div class="nav">
 
     <div class="links">
       <a href=""><b>Logo</b></a>
@@ -26,10 +26,12 @@
         <li> <b>Pages</b><img src="asset/arrow.png"> </li>
         <li> <b>Components</b> </li>
         <li> <b>Collections</b> </li>
+        
       </ul>
+      <span class="toggle">☰</span>
     </div>
 
-    <div class="logout">
+    <div class="profile">
       <ul class="fa-ul">
         <li><a class="button-dark" href=""><img src="asset/search.png"></a></li>
         <li><a class="button-dark" href=""> <img src="asset/message.png"></a><span class="badge">3</span></li>
@@ -40,20 +42,25 @@
     </div>
 
   </div>
+
+<!--Btns and Welcome Text-->
+
   <div class="flex-welcome">
     <div class="txtdash">
-      <p> <span id="sales">Dashboard / <a href="" style="color: #0752f3;">Sales Monitoring</a></span><br><br>
+      <p> <span id="sales">Dashboard / <a href="" style="color: #0752f3;">Sales Monitoring</a></span><br>
         <span><b>Welcome To Dashboard</b></span>
       </p>
     </div>
+  
     <div class="btns-container">
       <button class="btn"><i class="fa fa-envelope-o" aria-hidden="true"></i> Email</button>
       <button class="btn"><i class="fa fa-print" aria-hidden="true"></i> Print </button>
       <button class="btn-fill"><i class="fa fa-folder-open-o" aria-hidden="true"></i> Generate Report </button>
     </div>
-
-
   </div>
+
+<!--End Btns and Welcome Text-->
+
   <div class="parent">
 
     <div class="child">
@@ -139,7 +146,7 @@
         </div>
 
       </div>
-      
+
       <img src="asset/Graph-2.png" class="graphimg">
       <div class="number">
         <span class="date">12 FEB</span>
@@ -153,36 +160,42 @@
       </div>
     </div>
     <div class="right">
-       <div class="acc">
+      <div class="acc">
 
         <span style="font-size:15px ;"><b>Account Retention</b></span>
-       </div>
-      <div >
-        <span  style="font-size:10px ;padding-left: 12px;">Number of customer who have active subscribtion with you</span>
+      </div>
+      <div>
+        <span style="font-size:10px ;padding-left: 12px;">Number of customer who have active subscribtion with you</span>
         <img src="asset/Graph-3.png" class="graphimg">
       </div>
+      
+      <div class="expension">
+        <div class="ex-child">
+          <span class="big-font">$1680.20</span>
+          <div style="padding-left:10px;color: #0752f3;text-transform: uppercase;font-size: small;">
+            <span><b>Expansions</b></span>
+          </div>
+          <div style="font-size: 12px;padding-left: 10px;"><span>Customer Who have upgraded Level of your Product or
+              Services</span></div>
+        </div>
 
-   
-       <div class="expension">
-       <div class="ex-child">
-       <span class="big-font">$1680.20</span>
-       <div style="padding-left:10px;color: #0752f3;text-transform: uppercase;font-size: small;"><span><b>Expansions</b></span></div>
-       <div style="font-size: 12px;padding-left: 10px;"><span>Customer Who have upgraded Level of your Product or Services</span></div>
+        <div class="ex-child">
+          <span class="big-font">$18,000</span>
+          <div style="padding-left:10px;color: #cf135b;text-transform: uppercase;font-size: small;">
+            <span><b>Cancelation</b></span>
+          </div>
+          <div style="font-size: 12px;padding-left: 10px;"><span>Customer Who have upgraded Level of your Product or
+              Services</span></div>
+        </div>
+
       </div>
-
-      <div class="ex-child">
-        <span class="big-font">$18,000</span>
-        <div style="padding-left:10px;color: #cf135b;text-transform: uppercase;font-size: small;"><span><b>Cancelation</b></span></div>
-        <div style="font-size: 12px;padding-left: 10px;"><span>Customer Who have upgraded Level of your Product or Services</span></div>
-       </div> 
-
-       </div>
 
     </div>
 
   </div>
-
-<br>
+ 
+  <br><br><br>
+ 
   <footer>
     <div>
       <span>
@@ -191,13 +204,13 @@
     </div>
     <div class="chnage">
       <span>
-        License 
+        License
       </span>
       <span>
-        Change Log 
+        Change Log
       </span>
       <span>
-        Get Help 
+        Get Help
       </span>
     </div>
   </footer>
