@@ -11,10 +11,12 @@ body {
 
 .nav {
   display: flex;
+
 }
 
 .links {
   flex: 0.2;
+  /* shorthand for: flex-grow: 1, flex-shrink: 1, flex-basis: 0 */
   display: flex;
   align-items: center;
   border-bottom: 1px solid #E2E4E9;
@@ -23,13 +25,17 @@ body {
 
 ul {
   display: flex;
-justify-content: space-evenly;
+
+  justify-content: space-evenly;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 li {
   display: block;
   flex: 0 1 auto;
+  /* Default */
   list-style-type: none;
   background: #fafafa;
 
@@ -38,11 +44,12 @@ li {
 .header-title {
   flex: 1;
   display: flex;
+  justify-content: center;
   align-items: center;
   border-bottom: 1px solid #E2E4E9;
 }
 
-.profile {
+.logout {
   flex: 0.5;
   display: flex;
   justify-content: flex-end;
@@ -70,11 +77,11 @@ li {
   font-weight: bolder;
   font-size: 10px;
   width: 15px;
- 
+  height: 15px;
   text-align: center;
   padding: 2px;
   position: absolute;
-
+  background-color: red;
   border-radius: 20px;
   left: 8px;
   top: -7px;
@@ -83,7 +90,7 @@ li {
 .flex-welcome {
 
   display: flex;
-padding: 10px;
+
 }
 
 .txtdash {
@@ -142,25 +149,25 @@ padding: 10px;
   padding-left: 250px;
   padding-right: 190px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .child {
   display: flex;
   margin: 3px;
+  flex: 1;
+  flex-wrap: wrap;
   border: 1px solid #d0d2d4;
   max-width: 100%;
 
 }
 
-/* .toggle {
-  display: none;
-} */
 .graphimg {
   max-width: 100%;
   object-fit: contain;
   display: flex;
-  flex-wrap: wrap;
+  
 
 }
 
@@ -186,6 +193,7 @@ padding: 10px;
   width: 100%;
   padding-left: 250px;
   padding-right: 190px;
+  flex-wrap: wrap;
 
 }
 
@@ -306,29 +314,8 @@ footer div {
 }
 
 .chnage {
-  
+
   display: flex;
   flex: 1;
   justify-content: space-evenly;
-}
-@media (max-width: 900px) {
-
-  
- .txtdash{
-   font-size: 10px;
-
- }
-.btn{
-  padding: 3px 6px;
- 
-  border: solid 2px #505357;
-  border-radius: 5px;
-  background: rgba(129, 127, 127, 0);
-  color: #505357;
-  margin: 10px;
-  cursor: pointer;
-  font-size: 9px;
-  text-transform: uppercase;
-}
-
 }
