@@ -13,7 +13,9 @@
 
 <body>
   <div class="nav">
-
+    <div class="hamburger">
+      <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+    </div>
     <div class="links">
       <a href=""><b>Logo</b></a>
 
@@ -26,41 +28,36 @@
         <li> <b>Pages</b><img src="asset/arrow.png"> </li>
         <li> <b>Components</b> </li>
         <li> <b>Collections</b> </li>
-        
       </ul>
-      <!-- <span class="toggle">☰</span> -->
     </div>
 
-    <div class="profile">
+    <div class="logout">
       <ul class="fa-ul">
         <li><a class="button-dark" href=""><img src="asset/search.png"></a></li>
         <li><a class="button-dark" href=""> <img src="asset/message.png"></a><span class="badge">3</span></li>
         <li> <a class="button-dark" href=""><img src="asset/bell.png"></a><span class="badge">3</span></li>
         <li> <a class="button-dark" href=""><img src="asset/profile.png"></a></li>
+        
 
       </ul>
+     
     </div>
-
+   
   </div>
-
-<!--Btns and Welcome Text-->
-
   <div class="flex-welcome">
     <div class="txtdash">
       <p> <span id="sales">Dashboard / <a href="" style="color: #0752f3;">Sales Monitoring</a></span><br>
         <span><b>Welcome To Dashboard</b></span>
       </p>
     </div>
-  
     <div class="btns-container">
       <button class="btn"><i class="fa fa-envelope-o" aria-hidden="true"></i> Email</button>
       <button class="btn"><i class="fa fa-print" aria-hidden="true"></i> Print </button>
       <button class="btn-fill"><i class="fa fa-folder-open-o" aria-hidden="true"></i> Generate Report </button>
     </div>
+
+
   </div>
-
-<!--End Btns and Welcome Text-->
-
   <div class="parent">
 
     <div class="child">
@@ -117,18 +114,15 @@
 
       <div class="left-header">
 
-        <div class="inner-first">
+        <div class="inner-first" >
           <span><b>Account & Monthly Recuring Revenue Growth</b></span>
         </div>
 
 
         <div class="inner-sec">
-          <span style="font-size: 10px;color: #5588f7;"><i class="fa fa-circle" aria-hidden="true"></i><b
-              style="padding: 5px; color:#9CA0A9">Actual Growth</b></span>
-          <span style="font-size: 10px;color: #9bf9af;"><i class="fa fa-circle" aria-hidden="true"></i><b
-              style="padding: 5px; color:#9CA0A9">Actual</b></span>
-          <span style="font-size: 10px;color: #9cbbfe;"><i class="fa fa-circle" aria-hidden="true"></i><b
-              style="padding: 5px; color:#9CA0A9">Plan</b></span>
+          <span id="growth"><i class="fa fa-circle" aria-hidden="true"></i><b style="padding: 5px; color:#9CA0A9">Actual Growth</b></span>
+          <span id="actual"><i class="fa fa-circle" aria-hidden="true"></i><b style="padding: 5px; color:#9CA0A9">Actual</b></span>
+          <span id="plan"><i class="fa fa-circle" aria-hidden="true"></i><b style="padding: 5px; color:#9CA0A9">Plan</b></span>
         </div>
       </div>
 
@@ -137,12 +131,12 @@
         <div class="mrr">
 
           <span>
-            <b class="big-font">$620,076</b><br><span><b style="padding-left: 10px;">MRR Growth</b></span></span>
+            <b class="big-font">$620,076</b><br><span><b  class="avg" style="padding-left: 10px;">MRR Growth</b></span></span>
         </div>
         <div id="mrr2">
 
           <span>
-            <b class="big-font">$1,200</b><br><span><b>AVG. MRR/Customer</b></span></span>
+            <b class="big-font">$1,200</b><br><span><b class="avg">AVG. MRR/Customer</b></span></span>
         </div>
 
       </div>
@@ -162,20 +156,22 @@
     <div class="right">
       <div class="acc">
 
-        <span style="font-size:15px ;"><b>Account Retention</b></span>
+        <span><b  class="big-font">Account Retention</b></span>
       </div>
       <div>
-        <span style="font-size:10px ;padding-left: 12px;">Number of customer who have active subscribtion with you</span>
+        <span style="font-size:10px ;padding-left: 12px;">Number of customer who have active subscribtion with
+          you</span>
         <img src="asset/Graph-3.png" class="graphimg">
       </div>
-      
+
+
       <div class="expension">
         <div class="ex-child">
           <span class="big-font">$1680.20</span>
           <div style="padding-left:10px;color: #0752f3;text-transform: uppercase;font-size: small;">
             <span><b>Expansions</b></span>
           </div>
-          <div style="font-size: 12px;padding-left: 10px;"><span>Customer Who have upgraded Level of your Product or
+          <div style="font-size: 8px;padding-left: 10px;"><span>Customer Who have upgraded Level of your Product or
               Services</span></div>
         </div>
 
@@ -184,7 +180,7 @@
           <div style="padding-left:10px;color: #cf135b;text-transform: uppercase;font-size: small;">
             <span><b>Cancelation</b></span>
           </div>
-          <div style="font-size: 12px;padding-left: 10px;"><span>Customer Who have upgraded Level of your Product or
+          <div style="font-size: 8px;padding-left: 10px;"><span>Customer Who have upgraded Level of your Product or
               Services</span></div>
         </div>
 
@@ -193,9 +189,11 @@
     </div>
 
   </div>
- 
-  <br><br><br>
- 
+
+  <br>
+  <br>
+  <br>
+  <br>
   <footer>
     <div>
       <span>
