@@ -391,10 +391,17 @@ ul{
   display: block;
   
 }
+li{
+  display: none;
+}
+.links{
+  display: none;
+}
 .hamburger{
   display: flex;
   align-items: flex-end;
   justify-content: end;
   padding: 20px;
 }
+
 }
