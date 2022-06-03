@@ -17,13 +17,13 @@ body {
   flex: 0.2;
   display: flex;
   align-items: center;
-  border: 1px solid #E2E4E9;
+  border-bottom: 1px solid #E2E4E9;
   padding: 20px;
 }
 
 ul {
   display: flex;
-  justify-content: space-evenly;
+justify-content: space-evenly;
   width: 100%;
 }
 
@@ -39,7 +39,7 @@ li {
   flex: 1;
   display: flex;
   align-items: center;
-  border: 1px solid #E2E4E9;
+  border-bottom: 1px solid #E2E4E9;
 }
 
 .profile {
@@ -47,7 +47,7 @@ li {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  border: 1px solid #E2E4E9;
+  border-bottom: 1px solid #E2E4E9;
 }
 
 .links a {
@@ -70,9 +70,11 @@ li {
   font-weight: bolder;
   font-size: 10px;
   width: 15px;
+ 
   text-align: center;
   padding: 2px;
   position: absolute;
+
   border-radius: 20px;
   left: 8px;
   top: -7px;
@@ -81,7 +83,7 @@ li {
 .flex-welcome {
 
   display: flex;
-  padding: 10px;
+padding: 10px;
 }
 
 .txtdash {
@@ -151,10 +153,9 @@ li {
 
 }
 
-.toggle {
+/* .toggle {
   display: none;
-}
-
+} */
 .graphimg {
   max-width: 100%;
   object-fit: contain;
@@ -305,73 +306,29 @@ footer div {
 }
 
 .chnage {
-
+  
   display: flex;
   flex: 1;
   justify-content: space-evenly;
 }
-
 @media (max-width: 900px) {
 
+  
+ .txtdash{
+   font-size: 10px;
 
-  .txtdash {
-    font-size: 10px;
-
-  }
-
-  .btn {
-    padding: 3px 6px;
-
-    border: solid 2px #505357;
-    border-radius: 5px;
-    background: rgba(129, 127, 127, 0);
-    color: #505357;
-    margin: 10px;
-    cursor: pointer;
-    font-size: 9px;
-    text-transform: uppercase;
-  }
-
-.nav {
-  display: flex;
-  flex-direction: column;
+ }
+.btn{
+  padding: 3px 6px;
+ 
+  border: solid 2px #505357;
+  border-radius: 5px;
+  background: rgba(129, 127, 127, 0);
+  color: #505357;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 9px;
+  text-transform: uppercase;
 }
 
-.links {
-  flex: 0.2;
-  display: flex;
-  align-items: center;
-  border: 1px solid #E2E4E9;
-  padding: 20px;
-}
-
-ul {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-}
-
-li {
-  display: block;
-  flex: 0 1 auto;
-  list-style-type: none;
-  background: #fafafa;
-
-}
-
-.header-title {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  border: 1px solid #E2E4E9;
-  flex-direction: column;
-}
-
-.profile {
-  flex: 0.5;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  border: 1px solid #E2E4E9;
-}
 }
