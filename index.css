@@ -382,6 +382,8 @@ footer div {
 .nav{
   display: flex;
   flex-direction: column;
+  
+  
  
 }
 .badge{
@@ -389,13 +391,21 @@ footer div {
 }
 ul{
   display: block;
+  text-align: center;
   
 }
 li{
-  display: none;
+padding: 10px;
+display: none;
+
+
 }
+
 .links{
-  display: none;
+ 
+  padding:15px;
+  position: absolute;
+   
 }
 .hamburger{
   display: flex;

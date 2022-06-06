@@ -1,19 +1,22 @@
+
 <html>
 
 <head>
   <title>
     Dashboard
   </title>
+  <script src= "ham.js"></script> 
   <script src="https://kit.fontawesome.com/fbf8e4451a.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Quicksand:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
+  
 </head>
 
 <body>
   <div class="nav">
-    <div class="hamburger">
+    <div class="hamburger" onclick="myFunction()">
       <span><i class="fa fa-bars" aria-hidden="true"></i></span>
     </div>
     <div class="links">
@@ -212,6 +215,20 @@
       </span>
     </div>
   </footer>
+  <script>
+    function myFunction() {
+      var x = document.getElementsByTagName("li");
+      console.log(x);
+      if (x.style.display === "none") {
+      x.style.display ="block";
+      } else {
+        x.style.display = "none";
+  
+      }
+    
+    }
+
+    </script>
 </body>
 
 </html>
