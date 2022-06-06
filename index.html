@@ -217,14 +217,15 @@
   </footer>
   <script>
     function myFunction() {
-      var x = document.getElementsByTagName("li");
-      console.log(x);
-      if (x.style.display === "none") {
-      x.style.display ="block";
-      } else {
-        x.style.display = "none";
-  
-      }
+      var elms = document.getElementsByTagName("li");
+     
+      Array.from(elms).forEach((x) => {
+    if (x.style.display === 'none') {
+      x.style.display = 'block';
+    } else {
+      x.style.display = 'none';
+    }
+  })
     
     }
 
