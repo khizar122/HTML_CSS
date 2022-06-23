@@ -1,17 +1,13 @@
-
 <html>
 
 <head>
-  <title>
-    Dashboard
-  </title>
-  <script src= "ham.js"></script> 
+  <title>Dashboard</title>
+  <script src="ham.js"></script>
   <script src="https://kit.fontawesome.com/fbf8e4451a.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Quicksand:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
-  
 </head>
 
 <body>
@@ -36,16 +32,16 @@
 
     <div class="logout">
       <ul class="fa-ul">
-        <li><a class="button-dark" href=""><img src="asset/search.png"></a></li>
+        <li><a class="button-dark" href="todo.html"><img src="asset/search.png"></a></li>
         <li><a class="button-dark" href=""> <img src="asset/message.png"></a><span class="badge">3</span></li>
         <li> <a class="button-dark" href=""><img src="asset/bell.png"></a><span class="badge">3</span></li>
         <li> <a class="button-dark" href=""><img src="asset/profile.png"></a></li>
-        
+
 
       </ul>
-     
+
     </div>
-   
+
   </div>
   <div class="flex-welcome">
     <div class="txtdash">
@@ -54,7 +50,8 @@
       </p>
     </div>
     <div class="btns-container">
-      <button class="btn"><i class="fa fa-envelope-o" aria-hidden="true"></i> Email</button>
+      <button class="btn" onclick="getBackendDataList()"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+        Email</button>
       <button class="btn"><i class="fa fa-print" aria-hidden="true"></i> Print </button>
       <button class="btn-fill"><i class="fa fa-folder-open-o" aria-hidden="true"></i> Generate Report </button>
     </div>
@@ -114,34 +111,32 @@
   <div class="card1">
 
     <div class="left">
-
       <div class="left-header">
-
-        <div class="inner-first" >
+        <div class="inner-first">
           <span><b>Account & Monthly Recuring Revenue Growth</b></span>
         </div>
 
-
         <div class="inner-sec">
-          <span id="growth"><i class="fa fa-circle" aria-hidden="true"></i><b style="padding: 5px; color:#9CA0A9">Actual Growth</b></span>
-          <span id="actual"><i class="fa fa-circle" aria-hidden="true"></i><b style="padding: 5px; color:#9CA0A9">Actual</b></span>
-          <span id="plan"><i class="fa fa-circle" aria-hidden="true"></i><b style="padding: 5px; color:#9CA0A9">Plan</b></span>
+          <span id="growth"><i class="fa fa-circle" aria-hidden="true"></i><b style="padding: 5px; color:#9CA0A9">Actual
+              Growth</b></span>
+          <span id="actual"><i class="fa fa-circle" aria-hidden="true"></i><b
+              style="padding: 5px; color:#9CA0A9">Actual</b></span>
+          <span id="plan"><i class="fa fa-circle" aria-hidden="true"></i><b
+              style="padding: 5px; color:#9CA0A9">Plan</b></span>
         </div>
       </div>
-
 
       <div class="contents">
         <div class="mrr">
 
           <span>
-            <b class="big-font">$620,076</b><br><span><b  class="avg" style="padding-left: 10px;">MRR Growth</b></span></span>
+            <b class="big-font">$620,076</b><br><span><b class="avg" style="padding-left: 10px;">MRR
+                Growth</b></span></span>
         </div>
         <div id="mrr2">
-
           <span>
             <b class="big-font">$1,200</b><br><span><b class="avg">AVG. MRR/Customer</b></span></span>
         </div>
-
       </div>
 
       <img src="asset/Graph-2.png" class="graphimg">
@@ -156,10 +151,11 @@
         <span class="date">19 FEB</span>
       </div>
     </div>
+
     <div class="right">
       <div class="acc">
 
-        <span><b  class="big-font">Account Retention</b></span>
+        <span><b class="big-font">Account Retention</b></span>
       </div>
       <div>
         <span style="font-size:10px ;padding-left: 12px;">Number of customer who have active subscribtion with
@@ -193,10 +189,6 @@
 
   </div>
 
-  <br>
-  <br>
-  <br>
-  <br>
   <footer>
     <div>
       <span>
@@ -218,18 +210,33 @@
   <script>
     function myFunction() {
       var elms = document.getElementsByTagName("li");
-     
       Array.from(elms).forEach((x) => {
-    if (x.style.display === 'none') {
-      x.style.display = 'block';
-    } else {
-      x.style.display = 'none';
-    }
-  })
-    
+        if (x.style.display === 'none') {
+          x.style.display = 'block';
+        } else {
+          x.style.display = 'none';
+        }
+      })
+
     }
 
-    </script>
+    function getBackendDataList() {
+      var http = new XMLHttpRequest()
+      http.open('GET', 'https://my-json-server.typicode.com/typicode/demo/db', true);
+      http.onreadystatechange = function () {
+        if (this.readyState === 4) {
+          var response = JSON.parse(this.responseText)
+          console.log(this.responseText.length)
+          for (var i = 0; i <= this.responseText.length; i++) {
+            console.log(response.posts[i].id)
+            console.log(response.posts[i].title)
+          }
+        }
+      }
+      http.send()
+
+    }
+  </script>
 </body>
 
 </html>
