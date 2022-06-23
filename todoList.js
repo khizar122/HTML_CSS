@@ -74,7 +74,7 @@ Http.onreadystatechange = function () {
                     li.style.marginBottom = "15px"
                     li.style.width = "50vh"
 
-                    li.innerHTML += '<li>' + JSON.parse(dataArr)[i].title + ' <button onclick="clicked();" style = "display:block;float:right;border-radius:5px;border:none;cursor:pointer;color:#FF0000;padding:4px">Delete ' + parseInt(JSON.parse(dataArr)[i].id - 1) + '</button> </li>'
+                    li.innerHTML += '<li>' + "New Node Created"+ ' <button onclick="clicked();" style = "display:block;float:right;border-radius:5px;border:none;cursor:pointer;color:#FF0000;padding:4px">Delete ' + parseInt(JSON.parse(dataArr)[i].id - 1) + '</button> </li>'
                     li.style.backgroundColor = "#F3F5F5";
                     li.style.padding = "10px"
 
@@ -91,11 +91,14 @@ Http.onreadystatechange = function () {
 }
 function clearData() {
     localStorage.clear()
+    list.innerHTML = ""
 
 }
 
 function clicked(index) {
      alert(index);
+     
     list.removeChild(list.childNodes[index])
+    
  
 }
