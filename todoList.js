@@ -26,13 +26,13 @@ Http.onreadystatechange = function () {
             li.style.marginBottom = "15px"
             li.style.width = "70vh"
 
-            li.innerHTML += '<input type="checkbox" /> '+JSON.parse(dataArr)[i].title+''
+            li.innerHTML += '<input type="checkbox" /> ' + JSON.parse(dataArr)[i].title + ''
 
 
             var flag = JSON.parse(dataArr)[i].completed
 
             list.appendChild(li)
-            
+
             if (i % 2 === 0) {
 
                 li.style.backgroundColor = "#F3F5F5";
@@ -74,8 +74,8 @@ Http.onreadystatechange = function () {
                     li.style.marginBottom = "15px"
                     li.style.width = "50vh"
 
-                 
-            li.innerHTML = '<input type="checkbox" /> '+input.value+''
+
+                    li.innerHTML = '<input type="checkbox" class = select/> ' + input.value + ''
                     li.style.backgroundColor = "#F3F5F5";
                     li.style.padding = "10px"
 
@@ -97,13 +97,17 @@ function clearData() {
 }
 
 function rem() {
+    // if (document.getElementsByClass('select').options.length == 0) {
+    //     alert('The selectbox contains 0 items');
+    //     return
+    // }
     var list = document.getElementById('unordered'),
         items = Array.prototype.slice.call(list.childNodes),
         item;
     while (item = items.pop()) {
         if (item.firstChild && item.firstChild.checked) {
             list.removeChild(item);
-          //  console.log()
+            //  console.log()
         }
     }
 }
