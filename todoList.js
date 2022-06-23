@@ -2,6 +2,7 @@
 //Getting Views
 let list = document.getElementById("unordered")
 var input = document.getElementById("add-input");
+var btn = document.getElementById("btn")
 
 //Sending Request
 const Http = new XMLHttpRequest();
@@ -19,18 +20,19 @@ Http.onreadystatechange = function () {
 
         dataArr = JSON.parse(Localdata)
 
-        for (var i = 0; i <= 10; i++) {
+        for (var i = 0; i <= 20; i++) {
 
             li = document.createElement("li")
             li.style.marginBottom = "15px"
             li.style.width = "70vh"
 
-            li.innerHTML =JSON.parse(dataArr)[i].title 
+            li.innerHTML += '<li>' + JSON.parse(dataArr)[i].title + ' <button onclick="clicked('+parseInt(JSON.parse(dataArr)[i].id-1)+');" style = "display:block;float:right;border-radius:5px;border:none;cursor:pointer;color:#FF0000;padding:4px">Delete ' + parseInt(JSON.parse(dataArr)[i].id - 1) + '</button> </li>'
+
 
             var flag = JSON.parse(dataArr)[i].completed
 
             list.appendChild(li)
-
+            
             if (i % 2 === 0) {
 
                 li.style.backgroundColor = "#F3F5F5";
@@ -52,7 +54,7 @@ Http.onreadystatechange = function () {
                 li.style.background = "#00A9A9"
                 li.style.color = "#F0F1F1"
             }
-          
+
 
         }
         input.addEventListener("keypress", function (event) {
@@ -71,7 +73,8 @@ Http.onreadystatechange = function () {
                     list.appendChild(li)
                     li.style.marginBottom = "15px"
                     li.style.width = "50vh"
-                   // li.innerHTML += '<li>' + "New Node" + ' <button onclick="removeNode('+i+');" style = "display:block;float:right;border-radius:5px;border:none;cursor:pointer;color:#FF0000;padding:4px">Delete</button> </li>'
+
+                    li.innerHTML += '<li>' + JSON.parse(dataArr)[i].title + ' <button onclick="clicked();" style = "display:block;float:right;border-radius:5px;border:none;cursor:pointer;color:#FF0000;padding:4px">Delete ' + parseInt(JSON.parse(dataArr)[i].id - 1) + '</button> </li>'
                     li.style.backgroundColor = "#F3F5F5";
                     li.style.padding = "10px"
 
@@ -79,15 +82,20 @@ Http.onreadystatechange = function () {
             }
         });
 
-    
+        // list.addEventListener('click', function(e) {
+        //     this.removeChild(e.target);
+        //   })
 
     }
+
 }
-// function removeNode(index) {
-    
-//     list.removeChild(list.childNodes[index])
-//     console.log(JSON.parse(dataArr))
-//     JSON.parse(dataArr).splice(index,1)
-//     localStorage.setItem('data',JSON.stringify(a))
-   
-// }
+function clearData() {
+    localStorage.clear()
+
+}
+
+function clicked(index) {
+     alert(index);
+    list.removeChild(list.childNodes[index])
+ 
+}
