@@ -23,6 +23,17 @@ input[type=text] {
   box-sizing: border-box;
 
 }
+.btn-container{
+  display: flex;
+  align-self: flex-end
+}
+.btn{
+  color: #ffffff;
+  background-color: #008984;
+  padding: 5px;
+  border: 1px solid white;
+  cursor: pointer;
+}
 .app{
   
   background: #ffffff;
