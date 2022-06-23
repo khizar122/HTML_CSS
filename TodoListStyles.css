@@ -23,17 +23,25 @@ input[type=text] {
   box-sizing: border-box;
 
 }
+#Delete{
+  background-color: red;
+  
+}
 .btn-container{
   display: flex;
-  align-self: flex-end
+  align-self: flex-end;
+  margin: 10px;
 }
 .btn{
   color: #ffffff;
-  background-color: #008984;
-  padding: 5px;
+  background-color: #EFCD0F;
+  padding: 10px;
   border: 1px solid white;
   cursor: pointer;
+  border-radius: 4px;
+  font-weight: 700;
 }
+
 .app{
   
   background: #ffffff;

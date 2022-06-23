@@ -20,13 +20,13 @@ Http.onreadystatechange = function () {
 
         dataArr = JSON.parse(Localdata)
 
-        for (var i = 0; i <= 20; i++) {
+        for (var i = 0; i <= 7; i++) {
 
             li = document.createElement("li")
             li.style.marginBottom = "15px"
             li.style.width = "70vh"
 
-            li.innerHTML += '<li>' + JSON.parse(dataArr)[i].title + ' <button onclick="clicked('+parseInt(JSON.parse(dataArr)[i].id-1)+');" style = "display:block;float:right;border-radius:5px;border:none;cursor:pointer;color:#FF0000;padding:4px">Delete ' + parseInt(JSON.parse(dataArr)[i].id - 1) + '</button> </li>'
+            li.innerHTML += '<input type="checkbox" /> '+JSON.parse(dataArr)[i].title+''
 
 
             var flag = JSON.parse(dataArr)[i].completed
@@ -74,7 +74,8 @@ Http.onreadystatechange = function () {
                     li.style.marginBottom = "15px"
                     li.style.width = "50vh"
 
-                    li.innerHTML += '<li>' + "New Node Created"+ ' <button onclick="clicked();" style = "display:block;float:right;border-radius:5px;border:none;cursor:pointer;color:#FF0000;padding:4px">Delete ' + parseInt(JSON.parse(dataArr)[i].id - 1) + '</button> </li>'
+                 
+            li.innerHTML = '<input type="checkbox" /> '+input.value+''
                     li.style.backgroundColor = "#F3F5F5";
                     li.style.padding = "10px"
 
@@ -95,10 +96,14 @@ function clearData() {
 
 }
 
-function clicked(index) {
-     alert(index);
-     
-    list.removeChild(list.childNodes[index])
-    
- 
+function rem() {
+    var list = document.getElementById('unordered'),
+        items = Array.prototype.slice.call(list.childNodes),
+        item;
+    while (item = items.pop()) {
+        if (item.firstChild && item.firstChild.checked) {
+            list.removeChild(item);
+          //  console.log()
+        }
+    }
 }
