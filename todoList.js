@@ -24,7 +24,7 @@ Http.onreadystatechange = function () {
 
             li = document.createElement("li")
             li.style.marginBottom = "15px"
-            li.style.width = "70vh"
+            li.style.width = "100%"
 
             li.innerHTML += '<input type="checkbox" /> ' + JSON.parse(dataArr)[i].title + ''
 
