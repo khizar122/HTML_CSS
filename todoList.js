@@ -78,7 +78,7 @@ Http.onreadystatechange = function () {
                     li.innerHTML = '<input type="checkbox" class = select/> ' + input.value + ''
                     li.style.backgroundColor = "#F3F5F5";
                     li.style.padding = "10px"
-
+                    input.value = " "
                 }
             }
         });
